@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190925 09:40:17.019" generator="Robot 3.1.2 (Python 2.7.15 on darwin)">
+<suite source="/Users/danai.t/Desktop/Training/Automation/TestCase/WorkShop2/rd.robot" id="s1" name="Rd">
+<test id="s1-t1" name="ยื่นภาษี">
+<kw name="เข้าระบบ">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://rdserver.rd.go.th/</arg>
+<arg>browser=gc</arg>
+</arguments>
+<msg timestamp="20190925 09:40:17.141" level="INFO">Opening browser 'gc' to base url 'https://rdserver.rd.go.th/'.</msg>
+<status status="PASS" endtime="20190925 09:40:20.299" starttime="20190925 09:40:17.141"></status>
+</kw>
+<status status="PASS" endtime="20190925 09:40:20.299" starttime="20190925 09:40:17.141"></status>
+</kw>
+<kw name="กดเมนูยื่นภาษี">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="menuList"]/li[3]/a</arg>
+</arguments>
+<msg timestamp="20190925 09:40:20.302" level="INFO">Clicking element 'xpath://*[@id="menuList"]/li[3]/a'.</msg>
+<status status="PASS" endtime="20190925 09:40:20.659" starttime="20190925 09:40:20.301"></status>
+</kw>
+<status status="PASS" endtime="20190925 09:40:20.659" starttime="20190925 09:40:20.299"></status>
+</kw>
+<kw name="กด ตลิกบน ป๊อปอัพ">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath://*[@id="lightboxdialog"]/p/iframe</arg>
+</arguments>
+<msg timestamp="20190925 09:40:20.660" level="INFO">Selecting frame 'xpath://*[@id="lightboxdialog"]/p/iframe'.</msg>
+<status status="PASS" endtime="20190925 09:40:20.682" starttime="20190925 09:40:20.660"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/p/table[3]/tbody/tr/td/a</arg>
+</arguments>
+<msg timestamp="20190925 09:40:20.682" level="INFO">Clicking element 'xpath:/html/body/p/table[3]/tbody/tr/td/a'.</msg>
+<status status="PASS" endtime="20190925 09:40:20.799" starttime="20190925 09:40:20.682"></status>
+</kw>
+<status status="PASS" endtime="20190925 09:40:20.800" starttime="20190925 09:40:20.659"></status>
+</kw>
+<kw name="กดกลับ">
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>Selects browser window matching ``locator``.</doc>
+<status status="PASS" endtime="20190925 09:40:20.810" starttime="20190925 09:40:20.800"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="lightboxdialog"]/button</arg>
+</arguments>
+<msg timestamp="20190925 09:40:20.810" level="INFO">Clicking element 'xpath://*[@id="lightboxdialog"]/button'.</msg>
+<status status="PASS" endtime="20190925 09:40:20.890" starttime="20190925 09:40:20.810"></status>
+</kw>
+<status status="PASS" endtime="20190925 09:40:20.890" starttime="20190925 09:40:20.800"></status>
+</kw>
+<status status="PASS" endtime="20190925 09:40:20.890" critical="yes" starttime="20190925 09:40:17.140"></status>
+</test>
+<status status="PASS" endtime="20190925 09:40:20.890" starttime="20190925 09:40:17.020"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Rd" pass="1">Rd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

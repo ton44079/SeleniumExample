@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190924 16:22:17.215" generator="Robot 3.1.2 (Python 2.7.15 on darwin)">
+<suite source="/Users/danai.t/Desktop/Training/Automation/TestCase/WorkShop1/uploadfile_success.robot" id="s1" name="Uploadfile Success">
+<test id="s1-t1" name="อัพโหลด 3 ไฟล์">
+<kw name="ไปหน้าอัพโหลด">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://nervgh.github.io/pages/angular-file-upload/examples/simple/</arg>
+<arg>browser=gc</arg>
+</arguments>
+<msg timestamp="20190924 16:22:17.342" level="INFO">Opening browser 'gc' to base url 'http://nervgh.github.io/pages/angular-file-upload/examples/simple/'.</msg>
+<status status="PASS" endtime="20190924 16:22:20.163" starttime="20190924 16:22:17.342"></status>
+</kw>
+<status status="PASS" endtime="20190924 16:22:20.163" starttime="20190924 16:22:17.342"></status>
+</kw>
+<kw name="เลือกไฟล์ m1.png">
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[1]/input[2]</arg>
+<arg>/Users/danai.t/Desktop/Training/Automation/TestCase/WorkShop1/mock/m1.png</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.191" starttime="20190924 16:22:20.164"></status>
+</kw>
+<status status="PASS" endtime="20190924 16:22:20.191" starttime="20190924 16:22:20.164"></status>
+</kw>
+<kw name="เลือกไฟล์ m2.png">
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[1]/input[2]</arg>
+<arg>/Users/danai.t/Desktop/Training/Automation/TestCase/WorkShop1/mock/m2.png</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.208" starttime="20190924 16:22:20.192"></status>
+</kw>
+<status status="PASS" endtime="20190924 16:22:20.208" starttime="20190924 16:22:20.191"></status>
+</kw>
+<kw name="เลือกไฟล์ m3.png">
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[1]/input[2]</arg>
+<arg>/Users/danai.t/Desktop/Training/Automation/TestCase/WorkShop1/mock/m3.png</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.224" starttime="20190924 16:22:20.208"></status>
+</kw>
+<status status="PASS" endtime="20190924 16:22:20.224" starttime="20190924 16:22:20.208"></status>
+</kw>
+<kw name="ตรวจสอบ">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/p</arg>
+<arg>Queue length: 3</arg>
+</arguments>
+<msg timestamp="20190924 16:22:20.225" level="INFO">Verifying element 'xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/p' contains exact text 'Queue length: 3'.</msg>
+<status status="PASS" endtime="20190924 16:22:20.241" starttime="20190924 16:22:20.224"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[1]/td[1]/strong</arg>
+<arg>m1.png</arg>
+</arguments>
+<msg timestamp="20190924 16:22:20.242" level="INFO">Verifying element 'xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[1]/td[1]/strong' contains exact text 'm1.png'.</msg>
+<status status="PASS" endtime="20190924 16:22:20.258" starttime="20190924 16:22:20.242"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[1]/td[2]</arg>
+<arg>0.15 MB</arg>
+</arguments>
+<msg timestamp="20190924 16:22:20.258" level="INFO">Verifying element 'xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[1]/td[2]' contains exact text '0.15 MB'.</msg>
+<status status="PASS" endtime="20190924 16:22:20.274" starttime="20190924 16:22:20.258"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[1]/td[5]/button[1]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.292" starttime="20190924 16:22:20.274"></status>
+</kw>
+<kw name="Element Should Be Disabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is disabled.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[1]/td[5]/button[2]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.305" starttime="20190924 16:22:20.292"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[1]/td[5]/button[3]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.322" starttime="20190924 16:22:20.305"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[2]/td[1]/strong</arg>
+<arg>m2.png</arg>
+</arguments>
+<msg timestamp="20190924 16:22:20.322" level="INFO">Verifying element 'xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[2]/td[1]/strong' contains exact text 'm2.png'.</msg>
+<status status="PASS" endtime="20190924 16:22:20.338" starttime="20190924 16:22:20.322"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[2]/td[2]</arg>
+<arg>0.22 MB</arg>
+</arguments>
+<msg timestamp="20190924 16:22:20.339" level="INFO">Verifying element 'xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[2]/td[2]' contains exact text '0.22 MB'.</msg>
+<status status="PASS" endtime="20190924 16:22:20.354" starttime="20190924 16:22:20.338"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[2]/td[5]/button[1]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.373" starttime="20190924 16:22:20.354"></status>
+</kw>
+<kw name="Element Should Be Disabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is disabled.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[2]/td[5]/button[2]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.389" starttime="20190924 16:22:20.373"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[2]/td[5]/button[3]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.406" starttime="20190924 16:22:20.389"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[3]/td[1]/strong</arg>
+<arg>m3.png</arg>
+</arguments>
+<msg timestamp="20190924 16:22:20.406" level="INFO">Verifying element 'xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[3]/td[1]/strong' contains exact text 'm3.png'.</msg>
+<status status="PASS" endtime="20190924 16:22:20.421" starttime="20190924 16:22:20.406"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[3]/td[2]</arg>
+<arg>0.22 MB</arg>
+</arguments>
+<msg timestamp="20190924 16:22:20.422" level="INFO">Verifying element 'xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[3]/td[2]' contains exact text '0.22 MB'.</msg>
+<status status="PASS" endtime="20190924 16:22:20.437" starttime="20190924 16:22:20.421"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[3]/td[5]/button[1]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.455" starttime="20190924 16:22:20.437"></status>
+</kw>
+<kw name="Element Should Be Disabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is disabled.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[3]/td[5]/button[2]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.468" starttime="20190924 16:22:20.455"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified with ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[3]/td[5]/button[3]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.486" starttime="20190924 16:22:20.468"></status>
+</kw>
+<status status="PASS" endtime="20190924 16:22:20.486" starttime="20190924 16:22:20.224"></status>
+</kw>
+<kw name="อัพโหลด m1.png สำเร็จ">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[1]/td[5]/button[1]</arg>
+</arguments>
+<msg timestamp="20190924 16:22:20.486" level="INFO">Clicking button 'xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[1]/td[5]/button[1]'.</msg>
+<status status="PASS" endtime="20190924 16:22:20.530" starttime="20190924 16:22:20.486"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/div/div/div/div[@style="width: 33%;"]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:20.746" starttime="20190924 16:22:20.530"></status>
+</kw>
+<status status="PASS" endtime="20190924 16:22:20.746" starttime="20190924 16:22:20.486"></status>
+</kw>
+<kw name="อัพโหลด m2.png สำเร็จ">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[2]/td[5]/button[1]</arg>
+</arguments>
+<msg timestamp="20190924 16:22:20.747" level="INFO">Clicking button 'xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[2]/td[5]/button[1]'.</msg>
+<status status="PASS" endtime="20190924 16:22:20.809" starttime="20190924 16:22:20.747"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/div/div/div/div[@style="width: 67%;"]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:21.028" starttime="20190924 16:22:20.810"></status>
+</kw>
+<status status="PASS" endtime="20190924 16:22:21.029" starttime="20190924 16:22:20.746"></status>
+</kw>
+<kw name="อัพโหลด m3.png สำเร็จ">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[3]/td[5]/button[1]</arg>
+</arguments>
+<msg timestamp="20190924 16:22:21.029" level="INFO">Clicking button 'xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/table/tbody/tr[3]/td[5]/button[1]'.</msg>
+<status status="PASS" endtime="20190924 16:22:21.094" starttime="20190924 16:22:21.029"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath://*[@id="ng-app"]/body/div/div[2]/div[2]/div/div/div/div[@style="width: 100%;"]</arg>
+</arguments>
+<status status="PASS" endtime="20190924 16:22:21.312" starttime="20190924 16:22:21.094"></status>
+</kw>
+<status status="PASS" endtime="20190924 16:22:21.312" starttime="20190924 16:22:21.029"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190924 16:22:21.377" starttime="20190924 16:22:21.312"></status>
+</kw>
+<status status="PASS" endtime="20190924 16:22:21.377" critical="yes" starttime="20190924 16:22:17.341"></status>
+</test>
+<status status="PASS" endtime="20190924 16:22:21.378" starttime="20190924 16:22:17.217"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Uploadfile Success" pass="1">Uploadfile Success</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
