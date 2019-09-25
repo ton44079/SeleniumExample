@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190925 12:02:45.866" generator="Robot 3.1.2 (Python 2.7.15 on darwin)">
+<robot rpa="false" generated="20190925 12:06:45.487" generator="Robot 3.1.2 (Python 2.7.15 on darwin)">
 <suite source="/Users/danai.t/Desktop/Training/Automation/TestCase/google5.robot" id="s1" name="Google5">
 <kw type="setup" name="เข้าไปยังหน้าค้นหาของ google" library="google_resource">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,10 +8,10 @@
 <arg>${URL}</arg>
 <arg>browser=gc</arg>
 </arguments>
-<msg timestamp="20190925 12:02:45.989" level="INFO">Opening browser 'gc' to base url 'http://google.com'.</msg>
-<status status="PASS" endtime="20190925 12:02:48.423" starttime="20190925 12:02:45.989"></status>
+<msg timestamp="20190925 12:06:45.609" level="INFO">Opening browser 'gc' to base url 'http://google.com'.</msg>
+<status status="PASS" endtime="20190925 12:06:48.856" starttime="20190925 12:06:45.609"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:48.424" starttime="20190925 12:02:45.988"></status>
+<status status="PASS" endtime="20190925 12:06:48.857" starttime="20190925 12:06:45.609"></status>
 </kw>
 <test id="s1-t1" name="XXXXX">
 <kw name="Flow search in google">
@@ -29,8 +29,8 @@
 <arg>css:input.gLFyf.gsfi</arg>
 <arg>${keyword}</arg>
 </arguments>
-<msg timestamp="20190925 12:02:48.425" level="INFO">Typing text 'เหล็กไหล' into text field 'css:input.gLFyf.gsfi'.</msg>
-<status status="PASS" endtime="20190925 12:02:48.517" starttime="20190925 12:02:48.425"></status>
+<msg timestamp="20190925 12:06:48.860" level="INFO">Typing text 'เหล็กไหล' into text field 'css:input.gLFyf.gsfi'.</msg>
+<status status="PASS" endtime="20190925 12:06:48.949" starttime="20190925 12:06:48.859"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -38,11 +38,11 @@
 <arg>css:input.gLFyf.gsfi</arg>
 <arg>RETURN</arg>
 </arguments>
-<msg timestamp="20190925 12:02:48.518" level="INFO">Sending key(s) (u'RETURN',) to css:input.gLFyf.gsfi element.</msg>
-<msg timestamp="20190925 12:02:48.522" level="INFO">Pressing special key RETURN to element.</msg>
-<status status="PASS" endtime="20190925 12:02:50.595" starttime="20190925 12:02:48.517"></status>
+<msg timestamp="20190925 12:06:48.950" level="INFO">Sending key(s) (u'RETURN',) to css:input.gLFyf.gsfi element.</msg>
+<msg timestamp="20190925 12:06:48.954" level="INFO">Pressing special key RETURN to element.</msg>
+<status status="PASS" endtime="20190925 12:06:51.246" starttime="20190925 12:06:48.949"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:50.595" starttime="20190925 12:02:48.425"></status>
+<status status="PASS" endtime="20190925 12:06:51.246" starttime="20190925 12:06:48.859"></status>
 </kw>
 <kw name="จะต้องเจอ" library="google_resource">
 <arguments>
@@ -53,7 +53,7 @@
 <arguments>
 <arg>id:resultStats</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:50.605" starttime="20190925 12:02:50.596"></status>
+<status status="PASS" endtime="20190925 12:06:51.256" starttime="20190925 12:06:51.247"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -63,8 +63,8 @@
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20190925 12:02:50.623" level="INFO">${result} = ผลการค้นหาประมาณ 1,370,000 รายการ (0.33 วินาที) </msg>
-<status status="PASS" endtime="20190925 12:02:50.623" starttime="20190925 12:02:50.605"></status>
+<msg timestamp="20190925 12:06:51.271" level="INFO">${result} = ผลการค้นหาประมาณ 1,370,000 รายการ (0.56 วินาที) </msg>
+<status status="PASS" endtime="20190925 12:06:51.271" starttime="20190925 12:06:51.256"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -76,8 +76,8 @@
 <assign>
 <var>@{resultSplite}</var>
 </assign>
-<msg timestamp="20190925 12:02:50.623" level="INFO">@{resultSplite} = [ ผลการค้นหาประมาณ | 1,370,000 | รายการ | (0.33 วินาที)  ]</msg>
-<status status="PASS" endtime="20190925 12:02:50.623" starttime="20190925 12:02:50.623"></status>
+<msg timestamp="20190925 12:06:51.271" level="INFO">@{resultSplite} = [ ผลการค้นหาประมาณ | 1,370,000 | รายการ | (0.56 วินาที)  ]</msg>
+<status status="PASS" endtime="20190925 12:06:51.271" starttime="20190925 12:06:51.271"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -85,7 +85,7 @@
 <arg>ผลการค้นหาประมาณ</arg>
 <arg>${resultSplite}[0]</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:50.624" starttime="20190925 12:02:50.624"></status>
+<status status="PASS" endtime="20190925 12:06:51.272" starttime="20190925 12:06:51.271"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -93,7 +93,7 @@
 <arg>รายการ</arg>
 <arg>${resultSplite}[2]</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:50.624" starttime="20190925 12:02:50.624"></status>
+<status status="PASS" endtime="20190925 12:06:51.272" starttime="20190925 12:06:51.272"></status>
 </kw>
 <kw name="Remove String" library="String">
 <doc>Removes all ``removables`` from the given ``string``.</doc>
@@ -104,8 +104,8 @@
 <assign>
 <var>${cleanData}</var>
 </assign>
-<msg timestamp="20190925 12:02:50.625" level="INFO">${cleanData} = (0.33วินาที)</msg>
-<status status="PASS" endtime="20190925 12:02:50.625" starttime="20190925 12:02:50.624"></status>
+<msg timestamp="20190925 12:06:51.272" level="INFO">${cleanData} = (0.56วินาที)</msg>
+<status status="PASS" endtime="20190925 12:06:51.272" starttime="20190925 12:06:51.272"></status>
 </kw>
 <kw name="Should Start With" library="BuiltIn">
 <doc>Fails if the string ``str1`` does not start with the string ``str2``.</doc>
@@ -113,7 +113,7 @@
 <arg>${cleanData}</arg>
 <arg>(</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:50.625" starttime="20190925 12:02:50.625"></status>
+<status status="PASS" endtime="20190925 12:06:51.273" starttime="20190925 12:06:51.273"></status>
 </kw>
 <kw name="Should End With" library="BuiltIn">
 <doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
@@ -121,9 +121,9 @@
 <arg>${cleanData}</arg>
 <arg>)</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:50.625" starttime="20190925 12:02:50.625"></status>
+<status status="PASS" endtime="20190925 12:06:51.273" starttime="20190925 12:06:51.273"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:50.625" starttime="20190925 12:02:50.595"></status>
+<status status="PASS" endtime="20190925 12:06:51.273" starttime="20190925 12:06:51.246"></status>
 </kw>
 <kw name="กลับไปยังหน้าค้นหา" library="google_resource">
 <kw name="Go To" library="SeleniumLibrary">
@@ -131,12 +131,12 @@
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20190925 12:02:50.626" level="INFO">Opening url 'http://google.com'</msg>
-<status status="PASS" endtime="20190925 12:02:51.011" starttime="20190925 12:02:50.626"></status>
+<msg timestamp="20190925 12:06:51.274" level="INFO">Opening url 'http://google.com'</msg>
+<status status="PASS" endtime="20190925 12:06:51.606" starttime="20190925 12:06:51.273"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:51.011" starttime="20190925 12:02:50.625"></status>
+<status status="PASS" endtime="20190925 12:06:51.606" starttime="20190925 12:06:51.273"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:51.011" starttime="20190925 12:02:48.424"></status>
+<status status="PASS" endtime="20190925 12:06:51.607" starttime="20190925 12:06:48.857"></status>
 </kw>
 <kw name="Flow search in google">
 <arguments>
@@ -153,8 +153,8 @@
 <arg>css:input.gLFyf.gsfi</arg>
 <arg>${keyword}</arg>
 </arguments>
-<msg timestamp="20190925 12:02:51.012" level="INFO">Typing text 'ไออุ่น' into text field 'css:input.gLFyf.gsfi'.</msg>
-<status status="PASS" endtime="20190925 12:02:51.093" starttime="20190925 12:02:51.012"></status>
+<msg timestamp="20190925 12:06:51.608" level="INFO">Typing text 'ไออุ่น' into text field 'css:input.gLFyf.gsfi'.</msg>
+<status status="PASS" endtime="20190925 12:06:51.675" starttime="20190925 12:06:51.608"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -162,11 +162,11 @@
 <arg>css:input.gLFyf.gsfi</arg>
 <arg>RETURN</arg>
 </arguments>
-<msg timestamp="20190925 12:02:51.093" level="INFO">Sending key(s) (u'RETURN',) to css:input.gLFyf.gsfi element.</msg>
-<msg timestamp="20190925 12:02:51.098" level="INFO">Pressing special key RETURN to element.</msg>
-<status status="PASS" endtime="20190925 12:02:52.654" starttime="20190925 12:02:51.093"></status>
+<msg timestamp="20190925 12:06:51.675" level="INFO">Sending key(s) (u'RETURN',) to css:input.gLFyf.gsfi element.</msg>
+<msg timestamp="20190925 12:06:51.680" level="INFO">Pressing special key RETURN to element.</msg>
+<status status="PASS" endtime="20190925 12:06:52.931" starttime="20190925 12:06:51.675"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:52.654" starttime="20190925 12:02:51.012"></status>
+<status status="PASS" endtime="20190925 12:06:52.931" starttime="20190925 12:06:51.607"></status>
 </kw>
 <kw name="จะต้องเจอ" library="google_resource">
 <arguments>
@@ -177,7 +177,7 @@
 <arguments>
 <arg>id:resultStats</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:52.664" starttime="20190925 12:02:52.654"></status>
+<status status="PASS" endtime="20190925 12:06:52.939" starttime="20190925 12:06:52.931"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -187,8 +187,8 @@
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20190925 12:02:52.691" level="INFO">${result} = ผลการค้นหาประมาณ 29,100,000 รายการ (0.53 วินาที) </msg>
-<status status="PASS" endtime="20190925 12:02:52.691" starttime="20190925 12:02:52.664"></status>
+<msg timestamp="20190925 12:06:52.953" level="INFO">${result} = ผลการค้นหาประมาณ 29,100,000 รายการ (0.43 วินาที) </msg>
+<status status="PASS" endtime="20190925 12:06:52.953" starttime="20190925 12:06:52.939"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -200,8 +200,8 @@
 <assign>
 <var>@{resultSplite}</var>
 </assign>
-<msg timestamp="20190925 12:02:52.691" level="INFO">@{resultSplite} = [ ผลการค้นหาประมาณ | 29,100,000 | รายการ | (0.53 วินาที)  ]</msg>
-<status status="PASS" endtime="20190925 12:02:52.691" starttime="20190925 12:02:52.691"></status>
+<msg timestamp="20190925 12:06:52.953" level="INFO">@{resultSplite} = [ ผลการค้นหาประมาณ | 29,100,000 | รายการ | (0.43 วินาที)  ]</msg>
+<status status="PASS" endtime="20190925 12:06:52.953" starttime="20190925 12:06:52.953"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -209,7 +209,7 @@
 <arg>ผลการค้นหาประมาณ</arg>
 <arg>${resultSplite}[0]</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:52.692" starttime="20190925 12:02:52.691"></status>
+<status status="PASS" endtime="20190925 12:06:52.954" starttime="20190925 12:06:52.954"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -217,7 +217,7 @@
 <arg>รายการ</arg>
 <arg>${resultSplite}[2]</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:52.692" starttime="20190925 12:02:52.692"></status>
+<status status="PASS" endtime="20190925 12:06:52.954" starttime="20190925 12:06:52.954"></status>
 </kw>
 <kw name="Remove String" library="String">
 <doc>Removes all ``removables`` from the given ``string``.</doc>
@@ -228,8 +228,8 @@
 <assign>
 <var>${cleanData}</var>
 </assign>
-<msg timestamp="20190925 12:02:52.692" level="INFO">${cleanData} = (0.53วินาที)</msg>
-<status status="PASS" endtime="20190925 12:02:52.693" starttime="20190925 12:02:52.692"></status>
+<msg timestamp="20190925 12:06:52.954" level="INFO">${cleanData} = (0.43วินาที)</msg>
+<status status="PASS" endtime="20190925 12:06:52.954" starttime="20190925 12:06:52.954"></status>
 </kw>
 <kw name="Should Start With" library="BuiltIn">
 <doc>Fails if the string ``str1`` does not start with the string ``str2``.</doc>
@@ -237,7 +237,7 @@
 <arg>${cleanData}</arg>
 <arg>(</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:52.693" starttime="20190925 12:02:52.693"></status>
+<status status="PASS" endtime="20190925 12:06:52.955" starttime="20190925 12:06:52.955"></status>
 </kw>
 <kw name="Should End With" library="BuiltIn">
 <doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
@@ -245,9 +245,9 @@
 <arg>${cleanData}</arg>
 <arg>)</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:52.693" starttime="20190925 12:02:52.693"></status>
+<status status="PASS" endtime="20190925 12:06:52.955" starttime="20190925 12:06:52.955"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:52.693" starttime="20190925 12:02:52.654"></status>
+<status status="PASS" endtime="20190925 12:06:52.955" starttime="20190925 12:06:52.931"></status>
 </kw>
 <kw name="กลับไปยังหน้าค้นหา" library="google_resource">
 <kw name="Go To" library="SeleniumLibrary">
@@ -255,12 +255,12 @@
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20190925 12:02:52.694" level="INFO">Opening url 'http://google.com'</msg>
-<status status="PASS" endtime="20190925 12:02:52.875" starttime="20190925 12:02:52.693"></status>
+<msg timestamp="20190925 12:06:52.956" level="INFO">Opening url 'http://google.com'</msg>
+<status status="PASS" endtime="20190925 12:06:53.133" starttime="20190925 12:06:52.955"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:52.875" starttime="20190925 12:02:52.693"></status>
+<status status="PASS" endtime="20190925 12:06:53.133" starttime="20190925 12:06:52.955"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:52.875" starttime="20190925 12:02:51.012"></status>
+<status status="PASS" endtime="20190925 12:06:53.133" starttime="20190925 12:06:51.607"></status>
 </kw>
 <kw name="Flow search in google">
 <arguments>
@@ -277,8 +277,8 @@
 <arg>css:input.gLFyf.gsfi</arg>
 <arg>${keyword}</arg>
 </arguments>
-<msg timestamp="20190925 12:02:52.876" level="INFO">Typing text 'ไออุ่น' into text field 'css:input.gLFyf.gsfi'.</msg>
-<status status="PASS" endtime="20190925 12:02:52.929" starttime="20190925 12:02:52.876"></status>
+<msg timestamp="20190925 12:06:53.135" level="INFO">Typing text 'ไออุ่น' into text field 'css:input.gLFyf.gsfi'.</msg>
+<status status="PASS" endtime="20190925 12:06:53.191" starttime="20190925 12:06:53.134"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -286,11 +286,11 @@
 <arg>css:input.gLFyf.gsfi</arg>
 <arg>RETURN</arg>
 </arguments>
-<msg timestamp="20190925 12:02:52.930" level="INFO">Sending key(s) (u'RETURN',) to css:input.gLFyf.gsfi element.</msg>
-<msg timestamp="20190925 12:02:52.935" level="INFO">Pressing special key RETURN to element.</msg>
-<status status="PASS" endtime="20190925 12:02:53.952" starttime="20190925 12:02:52.930"></status>
+<msg timestamp="20190925 12:06:53.192" level="INFO">Sending key(s) (u'RETURN',) to css:input.gLFyf.gsfi element.</msg>
+<msg timestamp="20190925 12:06:53.196" level="INFO">Pressing special key RETURN to element.</msg>
+<status status="PASS" endtime="20190925 12:06:54.431" starttime="20190925 12:06:53.191"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:53.952" starttime="20190925 12:02:52.875"></status>
+<status status="PASS" endtime="20190925 12:06:54.431" starttime="20190925 12:06:53.134"></status>
 </kw>
 <kw name="จะต้องเจอ" library="google_resource">
 <arguments>
@@ -301,7 +301,7 @@
 <arguments>
 <arg>id:resultStats</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:53.958" starttime="20190925 12:02:53.953"></status>
+<status status="PASS" endtime="20190925 12:06:54.437" starttime="20190925 12:06:54.432"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -311,8 +311,8 @@
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20190925 12:02:53.973" level="INFO">${result} = ผลการค้นหาประมาณ 29,100,000 รายการ (0.42 วินาที) </msg>
-<status status="PASS" endtime="20190925 12:02:53.973" starttime="20190925 12:02:53.958"></status>
+<msg timestamp="20190925 12:06:54.451" level="INFO">${result} = ผลการค้นหาประมาณ 29,100,000 รายการ (0.47 วินาที) </msg>
+<status status="PASS" endtime="20190925 12:06:54.451" starttime="20190925 12:06:54.438"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -324,8 +324,8 @@
 <assign>
 <var>@{resultSplite}</var>
 </assign>
-<msg timestamp="20190925 12:02:53.973" level="INFO">@{resultSplite} = [ ผลการค้นหาประมาณ | 29,100,000 | รายการ | (0.42 วินาที)  ]</msg>
-<status status="PASS" endtime="20190925 12:02:53.973" starttime="20190925 12:02:53.973"></status>
+<msg timestamp="20190925 12:06:54.451" level="INFO">@{resultSplite} = [ ผลการค้นหาประมาณ | 29,100,000 | รายการ | (0.47 วินาที)  ]</msg>
+<status status="PASS" endtime="20190925 12:06:54.451" starttime="20190925 12:06:54.451"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -333,7 +333,7 @@
 <arg>ผลการค้นหาประมาณ</arg>
 <arg>${resultSplite}[0]</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:53.974" starttime="20190925 12:02:53.973"></status>
+<status status="PASS" endtime="20190925 12:06:54.452" starttime="20190925 12:06:54.452"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -341,7 +341,7 @@
 <arg>รายการ</arg>
 <arg>${resultSplite}[2]</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:53.974" starttime="20190925 12:02:53.974"></status>
+<status status="PASS" endtime="20190925 12:06:54.452" starttime="20190925 12:06:54.452"></status>
 </kw>
 <kw name="Remove String" library="String">
 <doc>Removes all ``removables`` from the given ``string``.</doc>
@@ -352,8 +352,8 @@
 <assign>
 <var>${cleanData}</var>
 </assign>
-<msg timestamp="20190925 12:02:53.974" level="INFO">${cleanData} = (0.42วินาที)</msg>
-<status status="PASS" endtime="20190925 12:02:53.974" starttime="20190925 12:02:53.974"></status>
+<msg timestamp="20190925 12:06:54.453" level="INFO">${cleanData} = (0.47วินาที)</msg>
+<status status="PASS" endtime="20190925 12:06:54.453" starttime="20190925 12:06:54.452"></status>
 </kw>
 <kw name="Should Start With" library="BuiltIn">
 <doc>Fails if the string ``str1`` does not start with the string ``str2``.</doc>
@@ -361,7 +361,7 @@
 <arg>${cleanData}</arg>
 <arg>(</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:53.975" starttime="20190925 12:02:53.974"></status>
+<status status="PASS" endtime="20190925 12:06:54.453" starttime="20190925 12:06:54.453"></status>
 </kw>
 <kw name="Should End With" library="BuiltIn">
 <doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
@@ -369,9 +369,9 @@
 <arg>${cleanData}</arg>
 <arg>)</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:53.975" starttime="20190925 12:02:53.975"></status>
+<status status="PASS" endtime="20190925 12:06:54.453" starttime="20190925 12:06:54.453"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:53.975" starttime="20190925 12:02:53.952"></status>
+<status status="PASS" endtime="20190925 12:06:54.453" starttime="20190925 12:06:54.431"></status>
 </kw>
 <kw name="กลับไปยังหน้าค้นหา" library="google_resource">
 <kw name="Go To" library="SeleniumLibrary">
@@ -379,12 +379,12 @@
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20190925 12:02:53.976" level="INFO">Opening url 'http://google.com'</msg>
-<status status="PASS" endtime="20190925 12:02:54.163" starttime="20190925 12:02:53.975"></status>
+<msg timestamp="20190925 12:06:54.454" level="INFO">Opening url 'http://google.com'</msg>
+<status status="PASS" endtime="20190925 12:06:54.636" starttime="20190925 12:06:54.454"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:54.163" starttime="20190925 12:02:53.975"></status>
+<status status="PASS" endtime="20190925 12:06:54.637" starttime="20190925 12:06:54.453"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:54.163" starttime="20190925 12:02:52.875"></status>
+<status status="PASS" endtime="20190925 12:06:54.637" starttime="20190925 12:06:53.134"></status>
 </kw>
 <kw name="Flow search in google">
 <arguments>
@@ -401,8 +401,8 @@
 <arg>css:input.gLFyf.gsfi</arg>
 <arg>${keyword}</arg>
 </arguments>
-<msg timestamp="20190925 12:02:54.165" level="INFO">Typing text 'ไออุ่น' into text field 'css:input.gLFyf.gsfi'.</msg>
-<status status="PASS" endtime="20190925 12:02:54.234" starttime="20190925 12:02:54.164"></status>
+<msg timestamp="20190925 12:06:54.638" level="INFO">Typing text 'ไออุ่น' into text field 'css:input.gLFyf.gsfi'.</msg>
+<status status="PASS" endtime="20190925 12:06:54.694" starttime="20190925 12:06:54.638"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -410,11 +410,11 @@
 <arg>css:input.gLFyf.gsfi</arg>
 <arg>RETURN</arg>
 </arguments>
-<msg timestamp="20190925 12:02:54.235" level="INFO">Sending key(s) (u'RETURN',) to css:input.gLFyf.gsfi element.</msg>
-<msg timestamp="20190925 12:02:54.240" level="INFO">Pressing special key RETURN to element.</msg>
-<status status="PASS" endtime="20190925 12:02:55.449" starttime="20190925 12:02:54.234"></status>
+<msg timestamp="20190925 12:06:54.695" level="INFO">Sending key(s) (u'RETURN',) to css:input.gLFyf.gsfi element.</msg>
+<msg timestamp="20190925 12:06:54.699" level="INFO">Pressing special key RETURN to element.</msg>
+<status status="PASS" endtime="20190925 12:06:56.245" starttime="20190925 12:06:54.694"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:55.449" starttime="20190925 12:02:54.164"></status>
+<status status="PASS" endtime="20190925 12:06:56.245" starttime="20190925 12:06:54.637"></status>
 </kw>
 <kw name="จะต้องเจอ" library="google_resource">
 <arguments>
@@ -425,7 +425,7 @@
 <arguments>
 <arg>id:resultStats</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:55.456" starttime="20190925 12:02:55.449"></status>
+<status status="PASS" endtime="20190925 12:06:56.251" starttime="20190925 12:06:56.246"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -435,8 +435,8 @@
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20190925 12:02:55.472" level="INFO">${result} = ผลการค้นหาประมาณ 29,100,000 รายการ (0.56 วินาที) </msg>
-<status status="PASS" endtime="20190925 12:02:55.472" starttime="20190925 12:02:55.457"></status>
+<msg timestamp="20190925 12:06:56.266" level="INFO">${result} = ผลการค้นหาประมาณ 30,500,000 รายการ (0.76 วินาที) </msg>
+<status status="PASS" endtime="20190925 12:06:56.266" starttime="20190925 12:06:56.251"></status>
 </kw>
 <kw name="Split String" library="String">
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
@@ -448,8 +448,8 @@
 <assign>
 <var>@{resultSplite}</var>
 </assign>
-<msg timestamp="20190925 12:02:55.473" level="INFO">@{resultSplite} = [ ผลการค้นหาประมาณ | 29,100,000 | รายการ | (0.56 วินาที)  ]</msg>
-<status status="PASS" endtime="20190925 12:02:55.473" starttime="20190925 12:02:55.472"></status>
+<msg timestamp="20190925 12:06:56.266" level="INFO">@{resultSplite} = [ ผลการค้นหาประมาณ | 30,500,000 | รายการ | (0.76 วินาที)  ]</msg>
+<status status="PASS" endtime="20190925 12:06:56.266" starttime="20190925 12:06:56.266"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -457,7 +457,7 @@
 <arg>ผลการค้นหาประมาณ</arg>
 <arg>${resultSplite}[0]</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:55.473" starttime="20190925 12:02:55.473"></status>
+<status status="PASS" endtime="20190925 12:06:56.267" starttime="20190925 12:06:56.266"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -465,7 +465,7 @@
 <arg>รายการ</arg>
 <arg>${resultSplite}[2]</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:55.473" starttime="20190925 12:02:55.473"></status>
+<status status="PASS" endtime="20190925 12:06:56.267" starttime="20190925 12:06:56.267"></status>
 </kw>
 <kw name="Remove String" library="String">
 <doc>Removes all ``removables`` from the given ``string``.</doc>
@@ -476,8 +476,8 @@
 <assign>
 <var>${cleanData}</var>
 </assign>
-<msg timestamp="20190925 12:02:55.474" level="INFO">${cleanData} = (0.56วินาที)</msg>
-<status status="PASS" endtime="20190925 12:02:55.474" starttime="20190925 12:02:55.473"></status>
+<msg timestamp="20190925 12:06:56.267" level="INFO">${cleanData} = (0.76วินาที)</msg>
+<status status="PASS" endtime="20190925 12:06:56.267" starttime="20190925 12:06:56.267"></status>
 </kw>
 <kw name="Should Start With" library="BuiltIn">
 <doc>Fails if the string ``str1`` does not start with the string ``str2``.</doc>
@@ -485,7 +485,7 @@
 <arg>${cleanData}</arg>
 <arg>(</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:55.474" starttime="20190925 12:02:55.474"></status>
+<status status="PASS" endtime="20190925 12:06:56.267" starttime="20190925 12:06:56.267"></status>
 </kw>
 <kw name="Should End With" library="BuiltIn">
 <doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
@@ -493,9 +493,9 @@
 <arg>${cleanData}</arg>
 <arg>)</arg>
 </arguments>
-<status status="PASS" endtime="20190925 12:02:55.474" starttime="20190925 12:02:55.474"></status>
+<status status="PASS" endtime="20190925 12:06:56.268" starttime="20190925 12:06:56.268"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:55.474" starttime="20190925 12:02:55.449"></status>
+<status status="PASS" endtime="20190925 12:06:56.268" starttime="20190925 12:06:56.245"></status>
 </kw>
 <kw name="กลับไปยังหน้าค้นหา" library="google_resource">
 <kw name="Go To" library="SeleniumLibrary">
@@ -503,23 +503,23 @@
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20190925 12:02:55.475" level="INFO">Opening url 'http://google.com'</msg>
-<status status="PASS" endtime="20190925 12:02:55.665" starttime="20190925 12:02:55.475"></status>
+<msg timestamp="20190925 12:06:56.268" level="INFO">Opening url 'http://google.com'</msg>
+<status status="PASS" endtime="20190925 12:06:56.460" starttime="20190925 12:06:56.268"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:55.665" starttime="20190925 12:02:55.474"></status>
+<status status="PASS" endtime="20190925 12:06:56.460" starttime="20190925 12:06:56.268"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:55.665" starttime="20190925 12:02:54.164"></status>
+<status status="PASS" endtime="20190925 12:06:56.460" starttime="20190925 12:06:54.637"></status>
 </kw>
 <tags>
 <tag>v5</tag>
 </tags>
-<status status="PASS" endtime="20190925 12:02:55.665" critical="yes" starttime="20190925 12:02:48.424"></status>
+<status status="PASS" endtime="20190925 12:06:56.460" critical="yes" starttime="20190925 12:06:48.857"></status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190925 12:02:55.742" starttime="20190925 12:02:55.666"></status>
+<status status="PASS" endtime="20190925 12:06:56.536" starttime="20190925 12:06:56.461"></status>
 </kw>
-<status status="PASS" endtime="20190925 12:02:55.742" starttime="20190925 12:02:45.868"></status>
+<status status="PASS" endtime="20190925 12:06:56.536" starttime="20190925 12:06:45.489"></status>
 </suite>
 <statistics>
 <total>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190925 14:49:08.108" generator="Robot 3.1.2 (Python 2.7.15 on darwin)">
+<suite source="/Users/danai.t/Desktop/Training/Automation/TestCase/WorkShop3/signup_success.robot" id="s1" name="Signup Success">
+<kw type="setup" name="เข้าwebsite">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>browser=gc</arg>
+</arguments>
+<msg timestamp="20190925 14:49:08.232" level="INFO">Opening browser 'gc' to base url 'https://www.kimschiller.com/page-object-pattern-tutorial/'.</msg>
+<status status="PASS" endtime="20190925 14:49:10.641" starttime="20190925 14:49:08.232"></status>
+</kw>
+<status status="PASS" endtime="20190925 14:49:10.641" starttime="20190925 14:49:08.232"></status>
+</kw>
+<test id="s1-t1" name="สมัครสมาชิกกับระบบ">
+<kw name="กรอกชื่อ &quot;danai&quot; นามสกุล &quot;Thitipornchai&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:firstname</arg>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20190925 14:49:10.644" level="INFO">Typing text 'danai' into text field 'id:firstname'.</msg>
+<status status="PASS" endtime="20190925 14:49:10.758" starttime="20190925 14:49:10.644"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:lastname</arg>
+<arg>${lastname}</arg>
+</arguments>
+<msg timestamp="20190925 14:49:10.758" level="INFO">Typing text 'Thitipornchai' into text field 'id:lastname'.</msg>
+<status status="PASS" endtime="20190925 14:49:10.814" starttime="20190925 14:49:10.758"></status>
+</kw>
+<status status="PASS" endtime="20190925 14:49:10.814" starttime="20190925 14:49:10.642"></status>
+</kw>
+<kw name="กรอกข้อทูลที่อยู่ &quot;Bangkok, Thailand&quot; &quot;10250&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:address</arg>
+<arg>${address}</arg>
+</arguments>
+<msg timestamp="20190925 14:49:10.815" level="INFO">Typing text 'Bangkok, Thailand' into text field 'id:address'.</msg>
+<status status="PASS" endtime="20190925 14:49:10.880" starttime="20190925 14:49:10.815"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:zipcode</arg>
+<arg>${zipcode}</arg>
+</arguments>
+<msg timestamp="20190925 14:49:10.880" level="INFO">Typing text '10250' into text field 'id:zipcode'.</msg>
+<status status="PASS" endtime="20190925 14:49:10.926" starttime="20190925 14:49:10.880"></status>
+</kw>
+<status status="PASS" endtime="20190925 14:49:10.926" starttime="20190925 14:49:10.814"></status>
+</kw>
+<kw name="ส่งข้อมูลเพื่อการสมัคร">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id:signup</arg>
+</arguments>
+<msg timestamp="20190925 14:49:10.927" level="INFO">Clicking element 'id:signup'.</msg>
+<status status="PASS" endtime="20190925 14:49:11.485" starttime="20190925 14:49:10.926"></status>
+</kw>
+<status status="PASS" endtime="20190925 14:49:11.485" starttime="20190925 14:49:10.926"></status>
+</kw>
+<kw name="ผลการสมัครสำเร็จ ต้องแสดงคำว่า &quot;Thank you!&quot;">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>tag:h1</arg>
+<arg>${expect}</arg>
+</arguments>
+<msg timestamp="20190925 14:49:11.504" level="INFO">Element 'tag:h1' contains text 'Thank you!'.</msg>
+<status status="PASS" endtime="20190925 14:49:11.505" starttime="20190925 14:49:11.486"></status>
+</kw>
+<status status="PASS" endtime="20190925 14:49:11.505" starttime="20190925 14:49:11.486"></status>
+</kw>
+<status status="PASS" endtime="20190925 14:49:11.505" critical="yes" starttime="20190925 14:49:10.641"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190925 14:49:11.568" starttime="20190925 14:49:11.505"></status>
+</kw>
+<status status="PASS" endtime="20190925 14:49:11.568" starttime="20190925 14:49:08.110"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Signup Success" pass="1">Signup Success</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

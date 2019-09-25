@@ -1,6 +1,4 @@
 *** Setting ***
-Library  SeleniumLibrary
-Library  String
 Resource  resources/google_resource.robot
 Suite Setup  เข้าไปยังหน้าค้นหาของ google
 Suite Teardown  Close Browser

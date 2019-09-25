@@ -1,3 +1,7 @@
+*** Setting ***
+Library  SeleniumLibrary
+Library  String
+
 *** Keywords ***
 กลับไปยังหน้าค้นหา
     Go To  ${URL}    
