@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 Library  String
 Resource  pages/signup_page.robot
+Resource  pages/thankyou_page.robot
 
 *** Setting ***
 Suite Setup  เข้าwebsite
@@ -14,7 +15,7 @@ Suite Teardown  Close Browser
     กรอกชื่อ "danai" นามสกุล "Thitipornchai"
     กรอกข้อทูลที่อยู่ "Bangkok, Thailand" "10250"
     ส่งข้อมูลเพื่อการสมัคร
-    ผลการสมัครสำเร็จ ต้องแสดงคำว่า "Thank you!"
+    ผลการสมัครสำเร็จ
 
 *** Keywords ***
 เข้าwebsite
@@ -31,5 +32,5 @@ Suite Teardown  Close Browser
 ส่งข้อมูลเพื่อการสมัคร
     signup_page.Submit data
 
-ผลการสมัครสำเร็จ ต้องแสดงคำว่า "${expect}"
-    signup_page.Check register success show text "${expect}" 
+ผลการสมัครสำเร็จ
+    thankyou_page.Check Welcome Message

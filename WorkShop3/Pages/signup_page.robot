@@ -20,6 +20,3 @@ Fill in zipcode
 
 Submit data
     Click Element  id:signup
-
-Check register success show text "${expect}" 
-    Element Should Contain  tag:h1  ${expect}

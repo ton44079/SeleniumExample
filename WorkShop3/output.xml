@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190925 15:03:14.220" generator="Robot 3.1.2 (Python 2.7.15 on darwin)">
+<robot rpa="false" generated="20190925 15:08:24.115" generator="Robot 3.1.2 (Python 2.7.15 on darwin)">
 <suite source="/Users/danai.t/Desktop/Training/Automation/TestCase/WorkShop3/signup_success.robot" id="s1" name="Signup Success">
 <kw type="setup" name="เข้าwebsite">
 <kw name="Open" library="signup_page">
@@ -9,12 +9,12 @@
 <arg>https://www.kimschiller.com/page-object-pattern-tutorial/</arg>
 <arg>browser=gc</arg>
 </arguments>
-<msg timestamp="20190925 15:03:14.349" level="INFO">Opening browser 'gc' to base url 'https://www.kimschiller.com/page-object-pattern-tutorial/'.</msg>
-<status status="PASS" endtime="20190925 15:03:16.704" starttime="20190925 15:03:14.349"></status>
+<msg timestamp="20190925 15:08:24.245" level="INFO">Opening browser 'gc' to base url 'https://www.kimschiller.com/page-object-pattern-tutorial/'.</msg>
+<status status="PASS" endtime="20190925 15:08:26.565" starttime="20190925 15:08:24.245"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:16.704" starttime="20190925 15:03:14.348"></status>
+<status status="PASS" endtime="20190925 15:08:26.565" starttime="20190925 15:08:24.245"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:16.705" starttime="20190925 15:03:14.347"></status>
+<status status="PASS" endtime="20190925 15:08:26.566" starttime="20190925 15:08:24.244"></status>
 </kw>
 <test id="s1-t1" name="สมัครสมาชิกกับระบบ">
 <kw name="กรอกชื่อ &quot;danai&quot; นามสกุล &quot;Thitipornchai&quot;">
@@ -28,10 +28,10 @@
 <arg>id:firstname</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20190925 15:03:16.707" level="INFO">Typing text 'danai' into text field 'id:firstname'.</msg>
-<status status="PASS" endtime="20190925 15:03:16.820" starttime="20190925 15:03:16.707"></status>
+<msg timestamp="20190925 15:08:26.568" level="INFO">Typing text 'danai' into text field 'id:firstname'.</msg>
+<status status="PASS" endtime="20190925 15:08:26.675" starttime="20190925 15:08:26.567"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:16.820" starttime="20190925 15:03:16.706"></status>
+<status status="PASS" endtime="20190925 15:08:26.675" starttime="20190925 15:08:26.567"></status>
 </kw>
 <kw name="Fill in lastname" library="signup_page">
 <arguments>
@@ -43,12 +43,12 @@
 <arg>id:lastname</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20190925 15:03:16.821" level="INFO">Typing text 'Thitipornchai' into text field 'id:lastname'.</msg>
-<status status="PASS" endtime="20190925 15:03:16.878" starttime="20190925 15:03:16.821"></status>
+<msg timestamp="20190925 15:08:26.676" level="INFO">Typing text 'Thitipornchai' into text field 'id:lastname'.</msg>
+<status status="PASS" endtime="20190925 15:08:26.732" starttime="20190925 15:08:26.676"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:16.878" starttime="20190925 15:03:16.821"></status>
+<status status="PASS" endtime="20190925 15:08:26.732" starttime="20190925 15:08:26.675"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:16.878" starttime="20190925 15:03:16.706"></status>
+<status status="PASS" endtime="20190925 15:08:26.732" starttime="20190925 15:08:26.567"></status>
 </kw>
 <kw name="กรอกข้อทูลที่อยู่ &quot;Bangkok, Thailand&quot; &quot;10250&quot;">
 <kw name="Fill in address" library="signup_page">
@@ -61,10 +61,10 @@
 <arg>id:address</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20190925 15:03:16.879" level="INFO">Typing text 'Bangkok, Thailand' into text field 'id:address'.</msg>
-<status status="PASS" endtime="20190925 15:03:16.945" starttime="20190925 15:03:16.879"></status>
+<msg timestamp="20190925 15:08:26.733" level="INFO">Typing text 'Bangkok, Thailand' into text field 'id:address'.</msg>
+<status status="PASS" endtime="20190925 15:08:26.794" starttime="20190925 15:08:26.733"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:16.945" starttime="20190925 15:03:16.878"></status>
+<status status="PASS" endtime="20190925 15:08:26.794" starttime="20190925 15:08:26.732"></status>
 </kw>
 <kw name="Fill in zipcode" library="signup_page">
 <arguments>
@@ -76,12 +76,12 @@
 <arg>id:zipcode</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20190925 15:03:16.945" level="INFO">Typing text '10250' into text field 'id:zipcode'.</msg>
-<status status="PASS" endtime="20190925 15:03:16.992" starttime="20190925 15:03:16.945"></status>
+<msg timestamp="20190925 15:08:26.794" level="INFO">Typing text '10250' into text field 'id:zipcode'.</msg>
+<status status="PASS" endtime="20190925 15:08:26.842" starttime="20190925 15:08:26.794"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:16.992" starttime="20190925 15:03:16.945"></status>
+<status status="PASS" endtime="20190925 15:08:26.843" starttime="20190925 15:08:26.794"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:16.992" starttime="20190925 15:03:16.878"></status>
+<status status="PASS" endtime="20190925 15:08:26.843" starttime="20190925 15:08:26.732"></status>
 </kw>
 <kw name="ส่งข้อมูลเพื่อการสมัคร">
 <kw name="Submit data" library="signup_page">
@@ -90,35 +90,35 @@
 <arguments>
 <arg>id:signup</arg>
 </arguments>
-<msg timestamp="20190925 15:03:16.993" level="INFO">Clicking element 'id:signup'.</msg>
-<status status="PASS" endtime="20190925 15:03:17.551" starttime="20190925 15:03:16.993"></status>
+<msg timestamp="20190925 15:08:26.843" level="INFO">Clicking element 'id:signup'.</msg>
+<status status="PASS" endtime="20190925 15:08:27.111" starttime="20190925 15:08:26.843"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:17.551" starttime="20190925 15:03:16.993"></status>
+<status status="PASS" endtime="20190925 15:08:27.111" starttime="20190925 15:08:26.843"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:17.551" starttime="20190925 15:03:16.992"></status>
+<status status="PASS" endtime="20190925 15:08:27.111" starttime="20190925 15:08:26.843"></status>
 </kw>
-<kw name="ผลการสมัครสำเร็จ ต้องแสดงคำว่า &quot;Thank you!&quot;">
-<kw name="Check register success show text &quot;${expect}&quot;" library="signup_page">
+<kw name="ผลการสมัครสำเร็จ">
+<kw name="Check Welcome Message" library="thankyou_page">
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
 <arguments>
 <arg>tag:h1</arg>
-<arg>${expect}</arg>
+<arg>Thank you!</arg>
 </arguments>
-<msg timestamp="20190925 15:03:17.573" level="INFO">Element 'tag:h1' contains text 'Thank you!'.</msg>
-<status status="PASS" endtime="20190925 15:03:17.573" starttime="20190925 15:03:17.552"></status>
+<msg timestamp="20190925 15:08:27.134" level="INFO">Element 'tag:h1' contains text 'Thank you!'.</msg>
+<status status="PASS" endtime="20190925 15:08:27.134" starttime="20190925 15:08:27.112"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:17.573" starttime="20190925 15:03:17.552"></status>
+<status status="PASS" endtime="20190925 15:08:27.134" starttime="20190925 15:08:27.112"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:17.573" starttime="20190925 15:03:17.551"></status>
+<status status="PASS" endtime="20190925 15:08:27.134" starttime="20190925 15:08:27.111"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:17.573" critical="yes" starttime="20190925 15:03:16.705"></status>
+<status status="PASS" endtime="20190925 15:08:27.134" critical="yes" starttime="20190925 15:08:26.566"></status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190925 15:03:17.637" starttime="20190925 15:03:17.574"></status>
+<status status="PASS" endtime="20190925 15:08:27.198" starttime="20190925 15:08:27.135"></status>
 </kw>
-<status status="PASS" endtime="20190925 15:03:17.637" starttime="20190925 15:03:14.222"></status>
+<status status="PASS" endtime="20190925 15:08:27.198" starttime="20190925 15:08:24.121"></status>
 </suite>
 <statistics>
 <total>
