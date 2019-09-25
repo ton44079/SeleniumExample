@@ -1,13 +1,13 @@
 *** Setting ***
 Library  SeleniumLibrary
 Library  String
+Resource  pages/signup_page.robot
 
 *** Setting ***
 Suite Setup  เข้าwebsite
 Suite Teardown  Close Browser
 
 *** Variables ***
-${URL}  https://www.kimschiller.com/page-object-pattern-tutorial/
 
 *** Test Cases ***
 สมัครสมาชิกกับระบบ
@@ -18,18 +18,18 @@ ${URL}  https://www.kimschiller.com/page-object-pattern-tutorial/
 
 *** Keywords ***
 เข้าwebsite
-    Open Browser  ${URL}  browser=gc
+    signup_page.Open
 
 กรอกชื่อ "${name}" นามสกุล "${lastname}"
-    Input Text  id:firstname  ${name}
-    Input Text  id:lastname  ${lastname}
-
+    signup_page.Fill in firstname  ${name}
+    signup_page.Fill in lastname  ${lastname}
+    
 กรอกข้อทูลที่อยู่ "${address}" "${zipcode}"
-    Input Text  id:address  ${address}
-    Input Text  id:zipcode  ${zipcode}
+    signup_page.Fill in address  ${address}
+    signup_page.Fill in zipcode  ${zipcode}
 
 ส่งข้อมูลเพื่อการสมัคร
-    Click Element  id:signup
+    signup_page.Submit data
 
 ผลการสมัครสำเร็จ ต้องแสดงคำว่า "${expect}"
-    Element Should Contain  tag:h1  ${expect} 
+    signup_page.Check register success show text "${expect}" 
