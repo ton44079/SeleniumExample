@@ -20,6 +20,6 @@ XXXXX
 *** Keywords ***
 Flow search in google
     [Arguments]  ${keyword}  ${expect}
-    ค้นหาคำว่า    ${keyword}
-    จะต้องเจอ    ${expect}
-    กลับไปยังหน้าค้นหา
+    google_resource.ค้นหาคำว่า    ${keyword}
+    google_resource.จะต้องเจอ    ${expect}
+    google_resource.กลับไปยังหน้าค้นหา
